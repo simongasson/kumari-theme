@@ -1,0 +1,24 @@
+/*
+Theme Name: KumariTheme
+Theme URI: 
+Author: Simon Gasson
+Author URI: 
+Description: Simple theme designed for the Kumari Wear clothing brand
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+.topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.logo {
+    width: 50px;
+}

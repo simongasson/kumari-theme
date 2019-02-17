@@ -7,13 +7,13 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title><?php wp_title(); ?></title>
 
-    <!-- Custom styles for this template -->
-    <link href="blog.css" rel="stylesheet">
-
     <?php wp_head(); ?>
   </head>
 
-  <div>
+  <div class="topnav">
     <!-- navbar -->
-    <h1>navbar</h1>
+    <img class="logo" src="<?php echo get_bloginfo('template_url') ?>/images/logo.png" />
+    <a href="#home">Home</a>
+    <a href="#stock">Our Stock</a>
+    <a href="#contact">Contact Us</a>
   </div>
