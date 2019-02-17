@@ -19,6 +19,12 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
     background-color: #404040;
 }
 
+.center-block {
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+}
+
 /* RESPONSIVE GRID VIEW (MOBILE FIRST) */
 
 .row::after {
@@ -29,7 +35,6 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 [class*="col-"] {
     float: left;
-    padding: 0px;
     /* Extra Small Devices (Mobile first) */
     width: 100%;
 }
