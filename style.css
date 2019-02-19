@@ -21,8 +21,28 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 .center-block {
     margin: auto;
-    width: 60%;
+    width: 0%;
     padding: 10px;
+}
+
+.square-block {
+  position: relative;
+  overflow: hidden;
+}
+
+.square-block::before {
+  content:"";
+  display: block;
+  padding-top: 100%;
+}
+
+.beach img{
+  position: absolute;
+  height: 100%;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
 }
 
 /* RESPONSIVE GRID VIEW (MOBILE FIRST) */
