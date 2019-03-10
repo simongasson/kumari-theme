@@ -9,56 +9,165 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
 
+/* Testing */
+.empty {
+  height: 500px;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* General */
+
+*  {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+button {
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #008081;
+  color: white;
+  font-size: 16px;
+  border-radius: 18px;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  box-shadow: 0 6px 8px 0 rgba(0,0,0,0.24), 0 8px 25px 0 rgba(0,0,0,0.19);
+  cursor: pointer;
+}
+
+iframe {
+  width: 95%;
+  height: 92.5%;
+  margin: 2.5%;
+}
+
+/* Email Form */
+input{
+  background-color: white;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="text"]
+{
+    color: #202020;
+    width: 100%;
+}
+
+input[type="email"]
+{
+    color: #202020;
+    width: 100%;
+}
+
+textarea
+{
+    color: #202020;
+    width: 100%;
+    resize: none;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+
+.wpcf7 {
+  width: 100%;
+}
+
+.email-form {
+  padding: 5px;
+  background-color: #f2f2f2;
+  height: 90%;
+}
+
+.contact .center {
+  width: 95%;
+}
+
 /* Blocks */
 
 .teal-block {
-    background-color: #008081;
+  background-color: #008081;
 }
 
 .grey-block {
-    background-color: #404040;
+  background-color: #202020;
 }
 
-.center-block {
-    margin: auto;
-    width: 50%;
-    padding: 10px;
-    background-color: red;
+.white-block {
+  background-color: #f2f2f2;
 }
 
-.square-block {
+[class*="ar-"] {
   position: relative;
   overflow: hidden;
 }
 
-.square-block::before {
-  content:"";
-  display: block;
-  padding-top: 100%;
+@media only screen and (min-width: 992px) {
+  .ar-1-1::before {
+    content:"";
+    display: block;
+    padding-top: 60%;
+  }
 }
 
-.square-block .content {
+@media only screen and (min-width: 0px) {
+  .ar-1-1::before {
+    content:"";
+    display: block;
+    padding-top: 100%;
+}
+
+.ar-16-9::before {
+  content:"";
+  display: block;
+  padding-top: 60%;
+}
+
+[class*="ar-"] img {
   position: absolute;
-  height: 100%;
+  width: 100%;
 	top: 0;
 	left: 0;
 	bottom: 0;
   right: 0;
-  background-color: blue;
+}
+
+[class*="ar-"] .content {
+  position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+  right: 0;
 }
 
 /* RESPONSIVE GRID VIEW (MOBILE FIRST) */
 
 .row::after {
-    content: "";
-    clear: both;
-    display: table;
+  content: "";
+  clear: both;
+  display: table;
 }
 
 [class*="col-"] {
-    float: left;
-    /* Extra Small Devices (Mobile first) */
-    width: 100%;
+  float: left;
+  /* Extra Small Devices (Mobile first) */
+  width: 100%;
 }
 
 /* Small Devices */
@@ -125,21 +234,139 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
   .col-xl-12 {width: 100%;}
 }
 
-/* Landing Page */
+/* Navigation Bar */
 .topnav {
-    padding: 0px 5px 10px 5px;
+  padding: 0px 5px 10px 5px;
 }
 
-.topnav a {
-    float: right;
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 25px 16px;
-    text-decoration: none;
-    font-size: 20px;
+.topnav .right {
+  float: right;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 25px 16px;
+  text-decoration: none;
+  font-size: 20px;
 }
 
 .logo {
-    width: 100px;
+  width: 100px;
 }
+
+/* Footer */
+.footer {
+  margin: 0px;
+  padding: 25px;
+}
+
+.footer p {
+  margin: auto;
+}
+
+/* Landing Page */
+.heading {
+  overflow: hidden;
+}
+
+.heading img {
+  top: 0px;
+  width: 100%;
+}
+
+.heading h1 {
+  margin: 0px;
+  font-size: 80px;
+  color: #008081;
+}
+
+.heading p {
+  color: #e3e3e3e3;
+  font-size: 20px;
+}
+
+.heading .parallax {
+  background-image: url(http://localhost/test/wp-content/uploads/2019/02/landing-page.jpg);
+  background-attachment: fixed;
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (min-width: 0px) {
+  .heading .parallax {
+    background-size: 100%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .heading .parallax {
+    background-size: 60%;
+  }
+}
+
+.center {
+  width: 70%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* About */
+.about {
+  padding: 100px 0px 100px 0px;
+}
+
+.about h1 {
+  text-align: center;
+  width: 100%;
+  margin: 0px;
+  font-size: 60px;
+  color: #202020;
+}
+
+.about p {
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+  padding: 80px 100px 0px 100px;
+  color: #202020;
+}
+
+/* How To Buy */
+.buy h1 {
+  font-size: 60px;
+  color: #202020;
+}
+
+.buy p {
+  color: #202020;
+}
+
+.buy a {
+  text-decoration: none;
+  display: inline;
+}
+
+.buy .parallax {
+  background-image: url(http://localhost/test/wp-content/uploads/2019/02/how-to-buy.jpg);
+  background-attachment: fixed;
+  
+  background-repeat: no-repeat;
+  background-size: 50%;
+}
+
+@media only screen and (min-width: 0px) {
+  .buy .parallax {
+    background-size: 100%;
+    background-position: bottom left;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .buy .parallax {
+    background-size: 50%;
+    background-position: center right;
+  }
+}
+

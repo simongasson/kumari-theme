@@ -14,8 +14,8 @@
 
   <div class="topnav">
     <!-- navbar -->
-    <img class="logo" src="<?php echo get_bloginfo('template_url') ?>/images/logo.png" />
-    <a href="#contact">Contact Us</a>
-    <a href="#stock">Our Stock</a>
-    <a href="#home">Home</a>
+    <a href="#home"><img class="logo" src="<?php echo get_bloginfo('template_url') ?>/images/logo.png" /></a>
+    <a class="right" href="#contact">Contact Us</a>
+    <a class="right" href="#stock">Our Stock</a>
+    <a class="right" href="#home">Home</a>
   </div>

@@ -1,6 +1,6 @@
-        <div>
+        <div class="footer grey-block">
          <!-- Footer -->
-         <h1>Footer</h1>
+         <p>©kumariwear</p>
         </div>
 
         <?php wp_footer(); ?>
